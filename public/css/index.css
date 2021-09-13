@@ -189,25 +189,46 @@ html {
   .section .ts-2 {
     font-family: "Lato", sans-serif;
     letter-spacing: 1px;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: bold;
-    color: rgba(200, 218, 211, 0.3); }
+    color: rgba(200, 218, 211, 0.3);
+    margin: -2rem 0 0 2rem; }
+    @media (min-width: 576px) {
+      .section .ts-2 {
+        margin: -3rem 0 0 2rem;
+        font-size: 5.5rem; } }
+    @media (min-width: 768px) {
+      .section .ts-2 {
+        margin: -3.5rem 0 0 2rem;
+        font-size: 7.5rem; } }
   .section .it-guru {
     font-size: 2rem;
     color: rgba(8, 95, 99, 0.8);
     font-weight: bold;
     font-family: "Lato", sans-serif; }
+    @media (min-width: 576px) {
+      .section .it-guru {
+        font-size: 3rem; } }
   .section .intro-text, .section .footer-intro {
     font-family: "Montserrat", sans-serif;
     color: black;
     font-size: 1.5rem; }
+    @media (min-width: 576px) {
+      .section .intro-text, .section .footer-intro {
+        font-size: 2.2rem; } }
+    @media (min-width: 768px) {
+      .section .intro-text, .section .footer-intro {
+        font-size: 2.5rem; } }
   .section .testiomonial {
     padding-top: 2rem; }
     .section .testiomonial-height {
       height: 10rem; }
-      @media (min-width: 320px) {
+      @media (min-width: 576px) {
         .section .testiomonial-height {
-          height: 12rem; } }
+          height: 16rem; } }
+      @media (min-width: 768px) {
+        .section .testiomonial-height {
+          height: 20rem; } }
     .section .testiomonial-icon {
       font-size: 3rem;
       font-weight: bold;
@@ -216,6 +237,12 @@ html {
       font-size: 2rem;
       font-weight: bold;
       color: rgba(0, 0, 0, 0.5); }
+      @media (min-width: 576px) {
+        .section .testiomonial-title {
+          font-size: 2.7rem; } }
+      @media (min-width: 576px) {
+        .section .testiomonial-title {
+          font-size: 3.2rem; } }
     .section .testiomonial-l {
       border-top: 1px solid rgba(0, 0, 0, 0.2); }
     .section .testiomonial-g {
@@ -223,18 +250,35 @@ html {
     .section .testiomonial-quote {
       font-style: italic;
       font-size: 1.4rem;
-      font-weight: bold;
-      color: rgba(0, 0, 0, 0.7);
+      font-weight: bolder;
+      color: rgba(0, 0, 0, 0.9);
       letter-spacing: 1px; }
+      @media (min-width: 576px) {
+        .section .testiomonial-quote {
+          font-size: 2rem; } }
+      @media (min-width: 576px) {
+        .section .testiomonial-quote {
+          font-size: 2.5rem; } }
     .section .testiomonial-name {
       font-weight: bold;
       font-style: normal;
       color: rgba(8, 95, 99, 0.8);
       font-size: 1.8rem; }
-  @media (min-width: 576px) {
-    .section .profile-img {
-      margin-top: 2rem;
-      width: 50%; } }
+      @media (min-width: 576px) {
+        .section .testiomonial-name {
+          font-size: 2.7rem; } }
+  .section .profile-img {
+    margin-top: 2rem;
+    width: 80%; }
+    @media (min-width: 360px) {
+      .section .profile-img {
+        width: 60%; } }
+    @media (min-width: 576px) {
+      .section .profile-img {
+        width: 100%; } }
+    @media (min-width: 1200px) {
+      .section .profile-img {
+        width: 72%; } }
   .section .about-me {
     font-family: "Lato", sans-serif;
     font-size: 4rem;
@@ -250,16 +294,26 @@ html {
     font-family: "Montserrat", sans-serif;
     font-size: 1.6rem;
     margin-top: 2rem; }
-    @media (min-width: 360px) {
+    @media (min-width: 576px) {
       .section .about-intro {
-        font-size: 1rem; } }
+        font-size: 2rem; } }
+    @media (min-width: 992px) {
+      .section .about-intro {
+        font-size: 2.2rem; } }
     .section .about-intro .medal {
       font-weight: bold;
       color: rgba(8, 95, 99, 0.8); }
   .section .about-details .list-group-item {
     font-size: 1.6rem;
     color: rgba(0, 0, 0, 0.5);
-    font-weight: bold; }
+    font-weight: bold;
+    padding-left: 0; }
+    @media (min-width: 576px) {
+      .section .about-details .list-group-item {
+        font-size: 2rem; } }
+    @media (min-width: 992px) {
+      .section .about-details .list-group-item {
+        font-size: 2.4rem; } }
     .section .about-details .list-group-item .detail-item {
       font-weight: bold;
       color: rgba(8, 95, 99, 0.8);
@@ -272,29 +326,25 @@ html {
         .section .expe .ex-role {
           font-size: 2rem; } }
   .section .ex-heding {
-    font-size: 10rem;
+    font-size: 3rem;
     font-family: "Lato", sans-serif;
     font-weight: bold;
     color: rgba(8, 95, 99, 0.8);
     letter-spacing: 3px;
     margin-top: 2rem; }
-    @media (min-width: 992px) {
-      .section .ex-heding {
-        font-size: 8rem; } }
-    @media (min-width: 768px) {
-      .section .ex-heding {
-        font-size: 6rem; } }
     @media (min-width: 576px) {
       .section .ex-heding {
-        font-size: 4.7rem;
-        letter-spacing: 1px; } }
-    @media (min-width: 360px) {
+        font-size: 6rem;
+        letter-spacing: 4px; } }
+    @media (min-width: 768px) {
       .section .ex-heding {
-        font-size: 4rem; } }
-    @media (min-width: 320px) {
+        font-size: 8rem;
+        letter-spacing: 6px; } }
+    @media (min-width: 992px) {
       .section .ex-heding {
-        font-size: 3rem;
-        margin-top: 1.5rem; } }
+        font-size: 10rem;
+        letter-spacing: 10px;
+        margin-top: 2rem; } }
   .section .ex-date {
     font-size: 1.8rem;
     color: rgba(0, 0, 0, 0.7);

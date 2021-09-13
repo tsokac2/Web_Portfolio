@@ -85,9 +85,18 @@
 .ts-2 {
   font-family: $heding-font;
   letter-spacing: 1px;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bold;
   color: rgba(200,218,211, 0.3);
+  margin: -2rem 0 0 2rem;
+  @include response(sm) {
+    margin: -3rem 0 0 2rem;
+    font-size: 5.5rem;
+  }
+  @include response(md) {
+    margin: -3.5rem 0 0 2rem;
+    font-size: 7.5rem;
+  }
 
 }
 
@@ -96,19 +105,25 @@
   color: $g-color;
   font-weight: bold;
   font-family: $heding-font;
+  @include response(sm) {font-size: 3rem;}
 }
 .intro-text, .footer-intro {
   font-family: $base-font;
   color: black;
   font-size: 1.5rem;
+  @include response(sm) {font-size: 2.2rem;}
+  @include response(md) {font-size: 2.5rem;}
 }
 
 .testiomonial {
   padding-top: 2rem;
   &-height {
     height: 10rem;
-    @include response(ss) {
-      height: 12rem;
+    @include response(sm) {
+      height: 16rem;
+    }
+    @include response(md) {
+      height: 20rem;
     }
   }
   &-icon {
@@ -120,6 +135,8 @@
     font-size: 2rem;
     font-weight: bold;
     color: $light-grey;
+    @include response(sm) {font-size: 2.7rem;}
+    @include response(sm) {font-size: 3.2rem;}
 
   }
     &-l {border-top: 1px solid $super-light-grey;}
@@ -127,26 +144,30 @@
     &-quote {
         font-style: italic;
         font-size: 1.4rem;
-        font-weight: bold;
-        color: $dark-grey;
+        font-weight: bolder;
+        color: rgba(0,0,0, 0.9);
         letter-spacing: 1px;
+        @include response(sm) {font-size: 2rem;}
+        @include response(sm) {font-size: 2.5rem;}
     }
     &-name {
       font-weight: bold;
       font-style: normal;
       color: $g-color;
       font-size: 1.8rem;
+      @include response(sm) {font-size: 2.7rem;}
     }
-  }
+}
 
   /*-- Profile --*/
     .profile-img {
-      @include response(sm) {
-        margin-top: 2rem;
-        width: 50%;
-        }
-    }
+      margin-top: 2rem;
+      width: 80%;
+      @include response(xs) {width: 60%;}
+      @include response(sm) {width: 100%;}
+      @include response(xl) {width: 72%;}
 
+    }
     .about {
       &-me {
         font-family: $heding-font;
@@ -165,9 +186,9 @@
         font-family: $base-font;
         font-size: 1.6rem;
         margin-top: 2rem;
-        @include response(xs) {
-          font-size: 1rem;
-          }
+        @include response(sm) {font-size: 2rem;}
+        @include response(lg) {font-size: 2.2rem;}
+       
       .medal {
         font-weight: bold;
         color:$g-color;
@@ -179,6 +200,9 @@
           font-size: 1.6rem;
           color: $light-grey;
           font-weight: bold;
+          padding-left: 0;
+          @include response(sm) {font-size: 2rem;}
+          @include response(lg) {font-size: 2.4rem;}
           .detail-item {
             font-weight: bold;
             color: $g-color;
@@ -200,29 +224,25 @@
     }
 /*-- Experience--*/
 .ex-heding {
-  font-size: 10rem;
+  font-size: 3rem;
   font-family: $heding-font;
   font-weight: bold;
   color: $g-color;
   letter-spacing: 3px;
   margin-top: 2rem;
-  @include response(lg) {
-    font-size: 8rem;
+ 
+  @include response(sm) {
+    font-size: 6rem;
+    letter-spacing: 4px;
   }
   @include response(md) {
-    font-size: 6rem;
+    font-size: 8rem;
+    letter-spacing: 6px;
   }
-  @include response(sm) {
-    font-size: 4.7rem;
-    letter-spacing: 1px;
-  }
-  @include response(xs) {
-    font-size: 4rem;
-
-  }
-  @include response(ss) {
-    font-size: 3rem;
-    margin-top: 1.5rem;
+  @include response(lg) {
+    font-size: 10rem;
+    letter-spacing: 10px;
+    margin-top: 2rem;
   }
 }
 
@@ -271,6 +291,8 @@
       
     }
 }
+
+
 .skills {
   /*-- Progres Bar --*/
   .sk-heding {
