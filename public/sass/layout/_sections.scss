@@ -110,7 +110,7 @@
 .intro-text, .footer-intro {
   font-family: $base-font;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   @include response(sm) {font-size: 2.2rem;}
   @include response(md) {font-size: 2.5rem;}
 }
@@ -223,9 +223,6 @@
       }
     }
 
-
-
-/*-- Experience--*/
 .ex-heding {
   font-size: 3rem;
   font-family: $heding-font;
@@ -248,10 +245,10 @@
     margin-top: 2rem;
   }
 }
-
 .ex-mr {@include response(lg){margin-right: 1.25rem;}}
 .ex-ml {@include response(lg){margin-left: 1.25rem;}}
 .ex-mt {margin-top: 2rem;}
+.sk-mt {margin-top: 1.5rem;}
 
 .ex {
     &-date {
@@ -311,50 +308,91 @@
     }
 }
 
-
 .skills {
-  /*-- Progres Bar --*/
+  
+  .dev-main-wrap {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: .6rem;
+
+      .skill-item {
+        border: 1px solid rgba(179, 179, 179, 0.3);
+        padding: .5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+
+      .sk-skills-sec {
+        grid-column: 1 / 3;
+        grid-row: 1;
+        font-family: $crazy-font;
+        font-size: 1.8rem;
+      }
+
+
+
+        .sk-link-item {
+          
+          background-color: rgba(179, 179, 179, 0.3);
+          
+
+          a {
+            display: inline-block;
+            width: 100%;
+            text-decoration: none;
+            text-align: center;
+            padding: .5rem;
+            color: rgba(8, 95, 99, 0.8);
+            @include response(sm){
+              text-align: left;
+            }
+            span {
+              display: none;
+              @include response(sm){
+                display: inline-block;
+                font-size: 1.5rem;
+                $g-color: rgba(8, 95, 99, 0.8);
+                margin-left: 1rem;
+              }
+              @include response(md){
+               
+                font-size: 2rem;
+              }
+            }
+
+            img {
+              display: inline;
+              width: 60%;
+              @include response(sm){
+                width: 25%;
+              }
+            }
+          }
+         
+        }
+
+      }
+  }
+
   .sk-heding {
       font-family: $crazy-font;
       letter-spacing: 1.5px;
       color: $light-grey;
       font-size: 2.5rem;
+      @include response(xs) {font-size: 3rem;}
+      @include response(sm) {font-size: 4rem;}
   }
-  .sk-skills-sec {
-      margin-top: 1.5rem;
-      font-family: $crazy-font;
-      font-size: 2rem;
-      @include response(md) {
-        font-size: 1.5rem;
-      }
-  }
+
   .sk-title {
     display: block;
     font-family: $heding-font;
     color: rgba(8, 95, 99, 0.9);
     font-style: bold;
     font-size: 1.5rem;
-    margin: .5rem 0 0 1rem;
-    @include response(sm) {
-      font-size: 1.25rem;
-    }
+    margin: .5rem 0 0 0;
+    @include response(xs) {font-size: 2rem;}
   }
-  .pro-bg {
-    background-color: rgba(0,0,0, 0.1);
-    width: 100%;
-    .high-bar {
-      @include pr-basic;
-      width: 90%;
-    }
-    .low-bar {
-      @include pr-basic;
-      width: 75%;
-    }
-    .s-low-bar {
-      @include pr-basic;
-      width: 65%;
-    }
-  }
+
 }
 
 /*-- Project --*/
@@ -375,7 +413,5 @@
               font-size: 1rem;
           }
         }
-
-
     }
 }
