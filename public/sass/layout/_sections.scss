@@ -249,6 +249,10 @@
 .ex-ml {@include response(lg){margin-left: 1.25rem;}}
 .ex-mt {margin-top: 2rem;}
 .sk-mt {margin-top: 1.5rem;}
+.sk-mtt {
+        margin-top: 2.5rem;
+        @include response(sm){margin-top: 3.5rem;}
+}
 
 .ex {
     &-date {
@@ -289,7 +293,7 @@
           font-size: 2rem;
         }
       }
-     
+      
       ul {
         margin-left: 2.5rem;
         list-style-type: circle;
@@ -306,7 +310,7 @@
       }
       
     }
-}
+  }
 
 .skills {
   .sk-heding {
@@ -332,12 +336,16 @@
         .sk-skills-sec {
           grid-column: 1 / 3;
           grid-row: 1;
-          background-color: rgba(8, 95, 99, 0.1);
+          background-color: rgba(8, 95, 99, 0.3);
           padding: .5rem;
+          height: 3rem;
+          @include response(sm){height: 3.5rem;}
+          @include response(lg){height: 4rem;}
           h4 {
             font-size: 1.5rem;
             font-weight: 900;
             font-family: $heding-font;
+            
             @include response(xs){font-size: 1.8rem;}
             @include response(sm){font-size: 2rem;}
             @include response(lg){font-size: 2.5rem;}
@@ -388,25 +396,92 @@
     margin: .5rem 0 0 0;
     @include response(xs) {font-size: 2rem;}
   }
-}
+  }
 
-/*-- Project --*/
-    .pro {
-      margin-top: 2rem;
-      @include response(xs) {
-        border-top: 1px solid rgba(0,0,0, 0.1);
-      }
-      .ex-role {
-        margin-top: 1.5rem;
-      }
-      .c-content {
-          font-size: 1.5rem;
-          color: $dark-grey;
-          font-weight: bold;
+.ex-role-title {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+    color: rgba(8, 95, 99, 0.8);
+    @include response(sm) {font-size: 3rem;}
+  }
+  
+ 
+  .pro-mtt {margin-top: 1.5rem;}
+  .pro-mt {margin-top: 3rem;}
+  .pro {
 
-          @include response(xs) {
-              font-size: 1rem;
-          }
-        }
+    .ex-role {
+      font-size: 2.2rem;
+      margin-top: 1rem;
+      @include response(sm) {font-size: 3rem;}
     }
+  
+    .c-content {
+        font-size: 1.5rem;
+        color: $dark-grey;
+        font-weight: bold;
+
+        @include response(xs) {
+            font-size: 1rem;
+        }
+      }
+  }
+
+  // .ex {
+  //   &-date {
+  //     font-size: 1.8rem;
+  //     color: $dark-grey;
+  //     font-weight: bolder;
+  //     margin-bottom: 1.5rem;
+  //     @include response(sm) {
+  //       font-size: 2.2rem;
+  //     }
+  //   }
+  //   &-role {
+  //     font-size: 2.5rem;
+  //     color: $g-color;
+  //     font-weight: bold;
+  //   }
+  //   &-work {
+  //     font-size: 1.5rem;
+  //     margin-bottom: 1.5rem;
+  //     a {color: $dark-grey;}
+  //     i {color:rgb(1,153,203);}
+  //     @include response(sm) {font-size: 2rem;}
+  //   }
+  //   &-achi {
+  //     font-size: 1.5rem;
+  //     @include response(sm) {
+  //       font-size: 2rem;
+  //     }
+  //     line-height: 20px;
+  //     a {color:rgb(1,153,203);}
+  //   }
+
+  //   &-dev-support {
+  //     margin-top: 1rem;
+  //     h4 {
+  //       font-size: 1.5rem;
+  //       @include response(sm) {
+  //         font-size: 2rem;
+  //       }
+  //     }
+      
+  //     ul {
+  //       margin-left: 2.5rem;
+  //       list-style-type: circle;
+
+  //       li:not(:first-child) {
+  //         margin-top: .5rem;
+  //       }
+  //       li {
+  //         font-size: 1.5rem;
+  //         @include response(sm) {
+  //           font-size: 2rem;
+  //         }
+  //       }
+  //     }
+      
+  //   }
+  // }
 }
