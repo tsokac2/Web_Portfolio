@@ -506,21 +506,49 @@ html {
         font-size: 3rem; } }
   .section .pro-mtt {
     margin-top: 1.5rem; }
+    @media (min-width: 768px) {
+      .section .pro-mtt {
+        margin-top: 0; } }
   .section .pro-mt {
-    margin-top: 3rem; }
-  .section .pro .ex-role {
-    font-size: 2.2rem;
-    margin-top: 1rem; }
+    margin-top: 2.5rem; }
+    @media (min-width: 768px) {
+      .section .pro-mt {
+        margin-top: 0; } }
+  @media (min-width: 768px) {
+    .section .pro-mt-md {
+      margin-top: 2.5rem; } }
+  .section .pro-role {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7); }
     @media (min-width: 576px) {
-      .section .pro .ex-role {
-        font-size: 3rem; } }
-  .section .pro .c-content {
+      .section .pro-role {
+        font-size: 2.5rem; } }
+  .section .pro-story {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.7); }
+    @media (min-width: 576px) {
+      .section .pro-story {
+        font-size: 2.5rem; } }
+  .section .pro-link {
     font-size: 1.5rem;
-    color: rgba(0, 0, 0, 0.7);
-    font-weight: bold; }
-    @media (min-width: 360px) {
-      .section .pro .c-content {
-        font-size: 1rem; } }
+    margin-bottom: 1.5rem; }
+    .section .pro-link a {
+      color: rgba(0, 0, 0, 0.7); }
+    .section .pro-link i {
+      color: #0199cb; }
+    @media (min-width: 576px) {
+      .section .pro-link {
+        font-size: 2rem; } }
+  .section .pro-story-det {
+    font-size: 1.2rem;
+    line-height: 22px; }
+    @media (min-width: 576px) {
+      .section .pro-story-det {
+        font-size: 1.5rem; } }
+    .section .pro-story-det a {
+      color: #07090a; }
 
 .footer-c {
   font-family: "Lato", sans-serif;
