@@ -213,7 +213,7 @@
     }
 
 /*-- Education --*/
-    .expe {
+  .expe {
       margin-top: 1rem;
       .ex-role {
         margin-top: 1.5rem;
@@ -221,40 +221,39 @@
           font-size: 2rem;
         }
       }
-    }
+  }
 
-.ex-heding {
-  font-size: 3rem;
-  font-family: $heding-font;
-  font-weight: bold;
-  color: $g-color;
-  letter-spacing: 3px;
-  margin-top: 2rem;
- 
-  @include response(sm) {
-    font-size: 6rem;
-    letter-spacing: 4px;
-  }
-  @include response(md) {
-    font-size: 8rem;
-    letter-spacing: 6px;
-  }
-  @include response(lg) {
-    font-size: 10rem;
-    letter-spacing: 10px;
+  .ex-heding {
+    font-size: 3rem;
+    font-family: $heding-font;
+    font-weight: bold;
+    color: $g-color;
+    letter-spacing: 3px;
     margin-top: 2rem;
+  
+    @include response(sm) {
+      font-size: 6rem;
+      letter-spacing: 4px;
+    }
+    @include response(md) {
+      font-size: 8rem;
+      letter-spacing: 6px;
+    }
+    @include response(lg) {
+      font-size: 10rem;
+      letter-spacing: 10px;
+      margin-top: 2rem;
+    }
   }
-}
-.ex-mr {@include response(lg){margin-right: 1.25rem;}}
-.ex-ml {@include response(lg){margin-left: 1.25rem;}}
-.ex-mt {margin-top: 2rem;}
-.sk-mt {margin-top: 1.5rem;}
-.sk-mtt {
-        margin-top: 2.5rem;
-        @include response(sm){margin-top: 3.5rem;}
-}
-
-.ex {
+  .ex-mr {@include response(lg){margin-right: 1.25rem;}}
+  .ex-ml {@include response(lg){margin-left: 1.25rem;}}
+  .ex-mt {margin-top: 2rem;}
+  .sk-mt {margin-top: 1.5rem;}
+  .sk-mtt {
+          margin-top: 2.5rem;
+          @include response(sm){margin-top: 3.5rem;}
+  }
+  .ex {
     &-date {
       font-size: 1.8rem;
       color: $dark-grey;
@@ -311,134 +310,269 @@
       
     }
   }
-
-.skills {
-  .sk-heding {
-    font-family: $crazy-font;
-    letter-spacing: 1.5px;
-    color: rgba(0,0,0, 0.7);
-    font-size: 2.5rem;
-    @include response(xs) {font-size: 3rem;}
-    @include response(sm) {font-size: 4rem;}
-  }
-  .dev-main-wrap {
-      display: grid;
-      grid-template-columns: auto auto;
-      grid-gap: 2rem;
-
-      .skill-item {
-        border: 1px solid rgba(179, 179, 179, 0.5);
-        padding: 0;
+  .skills {
+    .sk-heding {
+      font-family: $crazy-font;
+      letter-spacing: 1.5px;
+      color: rgba(0,0,0, 0.7);
+      font-size: 2.5rem;
+      @include response(xs) {font-size: 3rem;}
+      @include response(sm) {font-size: 4rem;}
+    }
+    .dev-main-wrap {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: .5rem;
+        grid-template-columns: auto auto;
+        grid-gap: 2rem;
 
-        .sk-skills-sec {
-          grid-column: 1 / 3;
-          grid-row: 1;
-          background-color: rgba(8, 95, 99, 0.3);
-          padding: .5rem;
-          height: 3rem;
-          @include response(sm){height: 3.5rem;}
-          @include response(lg){height: 4rem;}
-          h4 {
-            font-size: 1.5rem;
-            font-weight: 900;
-            font-family: $heding-font;
-            
-            @include response(xs){font-size: 1.8rem;}
-            @include response(sm){font-size: 2rem;}
-            @include response(lg){font-size: 2.5rem;}
+        .skill-item {
+          border: 1px solid rgba(179, 179, 179, 0.5);
+          padding: 0;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: .5rem;
+
+          .sk-skills-sec {
+            grid-column: 1 / 3;
+            grid-row: 1;
+            background-color: rgba(8, 95, 99, 0.3);
+            padding: .5rem;
+            height: 3rem;
+            @include response(sm){height: 3.5rem;}
+            @include response(lg){height: 4rem;}
+            h4 {
+              font-size: 1.5rem;
+              font-weight: 900;
+              font-family: $heding-font;
+              
+              @include response(xs){font-size: 1.8rem;}
+              @include response(sm){font-size: 2rem;}
+              @include response(lg){font-size: 2.5rem;}
+            }
+          }
+          .sk-link-item {
+            a {
+              display: inline-block;
+              width: 100%;
+              text-decoration: none;
+              text-align: center;
+              padding: .5rem;
+              color: rgba(8, 95, 99, 0.8);
+              transition: all;
+              &:hover {
+                background-color: rgba(8, 95, 99, 0.1);
+                transition: .25s ease-in-out;
+              }
+              @include response(sm){text-align: left;}
+              img {
+                display: inline;
+                width: 60%;
+                @include response(xs){width: 50%;}
+                @include response(xsm){width: 40%;}
+                @include response(sm){width: 25%;}
+              }
+              span {
+                display: none;
+                @include response(sm){
+                  display: inline-block;
+                  font-size: 1.5rem;
+                  $g-color: rgba(8, 95, 99, 0.8);
+                  margin-left: 1rem;
+                }
+                @include response(md){font-size: 2rem;}
+              }
+            }
           }
         }
-        .sk-link-item {
-          a {
-            display: inline-block;
-            width: 100%;
+    }
+    .sk-title {
+      display: block;
+      font-family: $heding-font;
+      color: rgba(8, 95, 99, 0.9);
+      font-style: bold;
+      font-size: 1.5rem;
+      margin: .5rem 0 0 0;
+      @include response(xs) {font-size: 2rem;}
+    }
+
+    .ex-role-title {
+      font-size: 2.2rem;
+      margin-top: 1rem;
+      color: rgba(8, 95, 99, 0.8);
+      @include response(sm) {font-size: 3rem;}
+    }
+
+    /*-- Projects --*/
+    .pro-mt {
+      margin-top: 2.5rem;
+      @include response(md) {margin-top: 0;}
+      }
+    .pro-mt-md {@include response(md) {margin-top: 2.5rem;}}
+
+    .pro {
+      &-title {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: rgba(0,0,0, 0.7);
+        @include response(sm) {font-size: 2.5rem;}
+      }
+      &-link {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        a {color: $dark-grey;}
+        i {color:rgb(1,153,203);}
+        @include response(sm) {font-size: 2rem;}
+      }
+      &-details {
+        font-size: 1rem;
+        padding: .5rem 1rem;
+        border: 1px solid rgba(8, 95, 99, 0.8);
+        letter-spacing: 1px;
+        background-color: rgb(255, 255, 255);
+        @include response(sm) {font-size: 1.5rem;}
+        transition: all;
+        &:hover {
+          transition: .25s ease-in-out;
+          background-color: rgba(8, 94, 99, 0.144);
+        }
+      }
+      &-live {
+        margin-left: .5rem;
+        display: inline-block;
+        font-size: 1rem;
+        padding: .5rem 1rem;
+        border: 1px solid rgba(8, 95, 99, 0.8);
+        letter-spacing: 1px;
+        transition: all;
+        @include response(sm) {font-size: 1.5rem;}
+        &:hover {
+          text-decoration: none;
+          transition: .25s ease-in-out;
+          background-color: rgba(8, 94, 99, 0.144);
+        }
+      }
+      &-story-h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: rgba(0,0,0, 0.7);
+        @include response(sm) {font-size: 2.5rem;}
+      }
+      &-story-det {
+        font-size: 1.2rem;
+        line-height: 22px;
+        @include response(sm) {font-size: 1.5rem;}
+        a {
+          color:rgb(8, 95, 99);
+          &:hover {
             text-decoration: none;
-            text-align: center;
+            transition: .25s ease-in-out;
+            color: rgba(8, 94, 99, .7);
+          }
+        
+        }
+      }
+      .pro-dev-main-wrap {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 2rem;
+  
+        .pro-skill-item {
+          border: 1px solid rgba(179, 179, 179, 0.5);
+          padding: 0;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: .5rem;
+          .pro-skills-sec {
+            grid-column: 1 / 3;
+            grid-row: 1;
+            background-color: rgba(8, 95, 99, 0.3);
             padding: .5rem;
-            color: rgba(8, 95, 99, 0.8);
-            transition: all;
-            &:hover {
-              background-color: rgba(8, 95, 99, 0.1);
-              transition: .25s ease-in-out;
+            height: 3rem;
+            @include response(sm){height: 3.5rem;}
+            @include response(lg){height: 4rem;}
+            h4 {
+              font-size: 1.5rem;
+              font-weight: 900;
+              font-family: $heding-font;
+              
+              @include response(xs){font-size: 1.8rem;}
+              @include response(sm){font-size: 2rem;}
+              @include response(lg){font-size: 2.5rem;}
             }
-            @include response(sm){text-align: left;}
-            img {
-              display: inline;
-              width: 60%;
-              @include response(xs){width: 50%;}
-              @include response(xsm){width: 40%;}
-              @include response(sm){width: 25%;}
-            }
-            span {
-              display: none;
-              @include response(sm){
-                display: inline-block;
-                font-size: 1.5rem;
-                $g-color: rgba(8, 95, 99, 0.8);
-                margin-left: 1rem;
+          }
+          .sk-link-item {
+            a {
+              display: inline-block;
+              width: 100%;
+              text-decoration: none;
+              text-align: center;
+              padding: .5rem;
+              color: rgba(8, 95, 99, 0.8);
+              transition: all;
+              &:hover {
+                background-color: rgba(8, 95, 99, 0.1);
+                transition: .25s ease-in-out;
               }
-              @include response(md){font-size: 2rem;}
+              @include response(sm){text-align: left;}
+              img {
+                display: inline;
+                width: 60%;
+                @include response(xs){width: 50%;}
+                @include response(xsm){width: 40%;}
+                @include response(sm){width: 25%;}
+              }
+              span {
+                display: none;
+                @include response(sm){
+                  display: inline-block;
+                  font-size: 1.5rem;
+                  $g-color: rgba(8, 95, 99, 0.8);
+                  margin-left: 1rem;
+                }
+                @include response(md){font-size: 2rem;}
+              }
             }
           }
         }
       }
-  }
+      .git-link-item {
+        margin-top: 2rem;
+        a {
+          width: 10rem;
+          padding: .5rem;
+          margin: 0 auto;
+          display: block;
+          text-decoration: none;
+          text-align: center;
+          color: rgba(8, 95, 99, 0.8);
+          transition: all;
+          border: 1px solid rgba(8, 95, 99, 0.8);
+          &:hover {
+            background-color: rgba(8, 95, 99, 0.1);
+            transition: .25s ease-in-out;
+          }
+          
+          @include response(sm){width: 13rem;}
 
-  .sk-title {
-    display: block;
-    font-family: $heding-font;
-    color: rgba(8, 95, 99, 0.9);
-    font-style: bold;
-    font-size: 1.5rem;
-    margin: .5rem 0 0 0;
-    @include response(xs) {font-size: 2rem;}
-  }
-  }
-
-.ex-role-title {
-    font-size: 2.2rem;
-    margin-top: 1rem;
-    color: rgba(8, 95, 99, 0.8);
-    @include response(sm) {font-size: 3rem;}
-  }
-  
-  .pro-mtt {
-    @include response(md) {margin-top: 0;}
-    margin-top: 1.5rem;}
-  .pro-mt {
-    margin-top: 2.5rem;
-    @include response(md) {margin-top: 0;}
-  }
-  .pro-mt-md {@include response(md) {margin-top: 2.5rem;}}
-
-  .pro {
-    &-role {
-      font-size: 1.8rem;
-      font-weight: bold;
-      color: rgba(0,0,0, 0.7);
-      @include response(sm) {font-size: 2.5rem;}
-    }
-    &-story {
-      font-size: 1.8rem;
-      font-weight: bold;
-      color: rgba(0,0,0, 0.7);
-      @include response(sm) {font-size: 2.5rem;}
-    }
-    &-link {
-      font-size: 1.5rem;
-      margin-bottom: 1.5rem;
-      a {color: $dark-grey;}
-      i {color:rgb(1,153,203);}
-      @include response(sm) {font-size: 2rem;}
-    }
-    &-story-det {
-      font-size: 1.2rem;
-      line-height: 22px;
-      @include response(sm) {font-size: 1.5rem;}
-      a {color:rgb(7, 9, 10);}
+          img {
+            display: inline;
+            width: 30%;
+            @include response(sm){ width: 35%;}
+            
+          }
+          span {
+              display: inline-block;
+              font-size: 1.5rem;
+              $g-color: rgba(8, 95, 99, 0.8);
+              margin-left: 1rem;
+            @include response(sm){font-size: 2rem;}
+          }
+        }
+      }
+      .modal-dialog {
+        @include response(sm) {
+          max-width: 850px;
+        }
+      }
     }
   }
 }

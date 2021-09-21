@@ -5,17 +5,24 @@
      border-bottom: none;
      padding-top: 1.5rem;
     }
+  .ml-tsr {@include response(lg) {margin-left: 10rem;}}
   .logo-ts {
     margin-top: 1vh;
     font-weight: bold;
     font-size: size(xl);
     color: $dark-grey;
+    @include response(sm) {
+      font-size: 4.5rem;
+    }
     .logo-s {
       font-family: 'Stoke', serif;
       font-weight: bold;
       font-style: italic;
       font-size: size(lg);
       margin-left: -5px;
+      @include response(sm) {
+        font-size: 3.5rem;
+      }
     }
     &:hover {
       color: rgba(0,0,0,.2);
