@@ -4,13 +4,9 @@
 
 
 ## Contents
-* **[User Experience Design (UX)](#UX)**
-* **[User Story](#User-Story)**       
 * **[Design process](#Design-process)**
 * **[Technologies used](#TECHNOLOGIES-USED)**
 * **[Testing](#TESTING)**
-* **[Deployment](#DEPLOYMENT)**
-* **[Credits](#Credits)**
 
 ****
 
