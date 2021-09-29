@@ -28,30 +28,212 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.js"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-light fixed-top">
-      <a href="showreel.html" target="_blank" class="navbar-brand logo-ts">T<span class="logo-s">sR</span></a>
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top d-sm-none">
+      <a href="showreel.html" target="_blank" class="navbar-brand logo-ts" >T<span class="logo-s">sR</span></a>
       <button class="navbar-toggler border-0 colaps-icon" type="button" data-toggle="collapse" data-target="#navbarCollapse"
       aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-grip-horizontal"></i>
       </button>
-      <div class="collapse navbar-collapse  bg-info" id="navbarCollapse">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item ho-item"><a class="nav-link link-item sliding-middle-out" href="home">Home</span></a></li>
-          <li class="nav-item"><a class="nav-link link-item sliding-middle-out" href="profile">Profile</a></li>
-          <li class="nav-item ex-item"><a class="nav-link link-item sliding-middle-out" href="experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link link-item sliding-middle-out" href="skills">Skills</a></li>
-          <li class="nav-item pr-item"><a class="nav-link link-item sliding-middle-out" href="projects">Projects</a></li>
+          <li class="nav-item ho-item"><a class="nav-link link-item" href="home">Home</span></a></li>
+          <li class="nav-item"><a class="nav-link link-item" href="profile">Profile</a></li>
+          <li class="nav-item ex-item"><a class="nav-link link-item" href="experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link link-item" href="skills">Skills</a></li>
+          <li class="nav-item pr-item"><a class="nav-link link-item" href="projects">Projects</a></li>
         </ul>
       </div>
     </nav>
-    <div class="container-fluid section">
-      <div class="row">
-        <div ng-view class="col">
-         
+    <div class="container-fluid d-sm-none fixed-top d-none d-sm-block">
+      <div class="row justify-content-center desktop-nav-wrap">
+        <div class="col-1 col-md-2 m-0 text-center">
+          <a href="showreel.html" target="_blank" class="logo-ts" >T<span class="logo-s">sR</span></a>
         </div>
+        <div class="col-11 col-md-8 p-0 text-center m-0">
+          <a class="nav-link sliding-middle-out" href="home">Home</span></a>
+          <a class="nav-link sliding-middle-out" href="profile">Profile</a>
+          <a class="nav-link sliding-middle-out" href="experience">Experience</a>
+          <a class="nav-link sliding-middle-out" href="skills">Skills</a>
+          <a class="nav-link sliding-middle-out last-item" href="projects">Projects</a>
+        </div>
+        <div class="col-md-2 m-0 d-none d-md-block"></div>
       </div>
     </div>
-    <!-- Footer -->
+    <div class="container-fluid section">
+      <div class="row">
+        <!-- <div ng-view class="col"> 
+        </div> -->
+
+        <div class="col">
+
+
+          <div class="row justify-content-start">
+            <div class="col-4 section-squer-main-wrap">
+              <div class="d-flex justify-content-center">
+                  <div class="section-squer-wrap">
+                    <i class="fas fa-home section-logo"></i>
+                  </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="d-flex justify-content-center">
+                <h1 class="home-heding">HOME.</h1>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-line-sections">
+            <div class="col-4 col-sm-2 testiomonial-l"></div>
+            <div class="col-2 col-sm-1 testiomonial-g"></div>
+            <div class="col-4 col-sm-2 testiomonial-l"></div>
+          </div>
+          <div class="row justify-content-center pt-4 pb-4">
+            <div class="col-12 col-sm-10 col-xl-8">
+              <div class="row justify-content-center">
+                <div class="col-12 text-center"><h1 class="h-1">Hello! I'm</h1></div>
+              </div>
+              <div class="row justify-content-start">
+                <div class="col-12 mt-4"><h1 class="ts-1">Tomislav Sokac</h1></div>
+                <div class="col-12"><h1 class="ts-2">Tomislav Sokac</h1></div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-12">
+                  <h2 class="it-guru">Inspired Junior Front End Developer | IT Guru,</h2>
+                </div>
+                <div class="col-xl-8 col-12 mt-1">
+                  <p class="intro-text">able to plan and lead full project life cycles including excellent presentation and communications skills.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 text-center"><h1 class="diploma-h1">Achievements</h1></div>
+              </div>
+              <div class="row justify-content-center mt-3">
+                <div class="col-4 testiomonial-l"></div>
+                <div class="col-2 testiomonial-g"></div>
+                <div class="col-4 testiomonial-l"></div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 p-0 diplomas-wrap">
+                  <div class="row justify-content-center m-0">
+                    <div class="col-12 col-md-6">
+                      <div class="row m-0">
+                        <div class="col-12 p-0">
+                          <a class="instution-link-heading code_fav" href="https://codeinstitute.net" target="_blank"><strong>Code Institute</strong></a>
+                        </div>
+                        <div class="col-12 col-sm-4 p-0 m-0 text-center">
+                          <a href="https://www.credential.net/4423388f-e6fb-4fd2-a5ca-224c591dacb5" class="diploma-link" target="_blank">
+                            <img src="public/images/codeinstitute.jpg" class="img-fluid">
+                          </a>
+                        </div>
+                        <div class="col-12 col-sm-8 diploma-description">
+                          <a href="https://www.credential.net/4423388f-e6fb-4fd2-a5ca-224c591dacb5" target="_blank"><strong>SB2008FS</strong></a>
+                          <h3><strong>Skills measured:</strong></h3>
+                         <ul>
+                           <li>User-Centric Front End Development with <strong>HTML & CSS</strong></li>
+                           <li>Interactive Front End Development with <strong>Javascript</strong></li>
+                           <li>Data-Centric Development with <strong>Python</strong></li>
+                           <li>Full-Stack Frameworks with <strong>Django</strong></li>
+                         </ul>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="col-12 d-md-none my-3">
+                      <div class="row justify-content-center mt-3">
+                        <div class="col-4 testiomonial-l"></div>
+                        <div class="col-2 testiomonial-g"></div>
+                        <div class="col-4 testiomonial-l"></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="row m-0">
+                        <div class="col-12 p-0">
+                          <a class="instution-link-heading ms_fav" href="https://docs.microsoft.com/en-us/" target="_blank"><strong>Microsoft</strong></a>
+                        </div>
+                        <div class="col-12 col-sm-4 p-0 m-0 text-center">
+                          <a href="https://www.credly.com/badges/93f8228d-1a5d-46e9-b902-1ded7d64863e/public_url" class="diploma-link" target="_blank">
+                            <img src="public/images/az-900.jpg" class="img-fluid">
+                          </a>
+                        </div>
+                        <div class="col-12 col-sm-8 diploma-description">
+                          <a href="https://www.credly.com/badges/93f8228d-1a5d-46e9-b902-1ded7d64863e/public_url" target="_blank"><strong>H939-1488</strong></a>
+                          <h3><strong>Skills measured:</strong></h3>
+                         <ul>
+                           <li>Cloud concepts</li>
+                           <li>Core Azure services</li>
+                           <li>Core solutions and management tools on <strong>Azure</strong></li>
+                           <li>General security and network security features</li>
+                           <li>Azure cost management and Service Level Agreements</li>
+                         </ul>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 my-3">
+                  <div class="row justify-content-center mt-3">
+                    <div class="col-4  testiomonial-l"></div>
+                    <div class="col-2  testiomonial-g"></div>
+                    <div class="col-4  testiomonial-l"></div>
+                  </div>
+                </div>
+                <div class="col-12 text-center"><h1 class="diploma-h1">Udemy</h1></div>
+                <div class="col-10 col-sm-12 col-md-10 col-xl-8 m-0">
+                  <div class="cert-wraps">
+                    <a href="https://www.udemy.com/certificate/UC-G19YIU5A/" class="cert-link-wrap sliding-middle-out" target="_blank">
+                      <img src="public/images/march_dev_bootcamp.jpg" class="img-fluid">
+                      <span>UC-G19YIU5A</span>
+                    </a>
+                    <a href="https://www.udemy.com/certificate/UC-7M5UYCA3/" class="cert-link-wrap sliding-middle-out" target="_blank">
+                      <img src="public/images/dev_bootcamp.jpg" class="img-fluid">
+                      <span>UC-7M5UYCA3</span>
+                    </a>
+                    <a href="https://www.udemy.com/certificate/UC-GD4CICQ8/" class="cert-link-wrap sliding-middle-out" target="_blank">
+                      <img src="public/images/end_march_dev_bootcamp.jpg" class="img-fluid">
+                      <span>UC-GD4CICQ8</span>
+                    </a>
+                    <a href="https://www.udemy.com/certificate/UC-0R8PP9DZ/" class="cert-link-wrap sliding-middle-out" target="_blank">
+                      <img src="public/images/oct_dev_bootcamp.jpg" class="img-fluid">
+                      <span>UC-0R8PP9DZ</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center testiomonial">
+                <div class="col-12 text-center mt-3">
+                  <i class="fas fa-quote-right testiomonial-icon"></i>
+                </div>
+                <div class="col-12 text-center mt-3">
+                  <h1 class="testiomonial-title">Testimonials</h1>
+                  <div class="row justify-content-center">
+                      <div class="col-4 col-sm-2 testiomonial-l"></div>
+                      <div class="col-2 col-sm-1 testiomonial-g"></div>
+                      <div class="col-4 col-sm-2 testiomonial-l"></div>
+                  </div>
+                </div>
+                <div class="col col-md-10 col-lg-8 col-xl-7 text-center mt-4">
+                  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active testiomonial-height">
+                          <p class="testiomonial-quote">"Simple can be harder than complex; you have to work hard to get your thinking clean to make it simple."</p>
+                          <p class="testiomonial-name">~ Steve Jobs ~</p>
+                      </div>
+                      <div class="carousel-item testiomonial-height">
+                        <p class="testiomonial-quote">"Nobody cares, <strong>WORK HARDER!</strong>"</p>
+                        <p class="testiomonial-name">~ Me ~</p>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+    </div>
     <div class="container-fluid">
       <div class="row justify-content-center border-top pt-4">
         <div class="col-12 footer">
@@ -121,8 +303,8 @@
             </div> 
             <div class="row justify-content-center border-top quick">
               <div class="col">
-                <div class="row">
-                  <div class="col-12 col-md-4">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-md-10">
                     <div class="row justify-content-center">
                       <div class="col text-center quick-title">About</div>
                       <div class="col-12">
@@ -134,31 +316,27 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 d-none d-md-block col-md-4">
+                  <div class="col-12 col-md-8">
                     <div class="row justify-content-center">
                       <div class="col text-center quick-title">Links</div>
-                      <div class="col-12 p-0 border-left">
-                        <ul class="list-group quick-list">
-                          <li class="list-group-item border-0 p-0 list-item"><a href="home" class="text-decoration-none font-weight-bold link-item"><i class="fas fa-ellipsis-v icon"></i> Home</a></li>
-                          <li class="list-group-item border-0 p-0 list-item"><a href="profile" class="text-decoration-none font-weight-bold link-item"><i class="fas fa-ellipsis-v icon"></i> Profile</a></li>
-                          <li class="list-group-item border-0 p-0 list-item"><a href="experience" class="text-decoration-none font-weight-bold link-item"><i class="fas fa-ellipsis-v icon"></i> Experience</a></li>
-                          <li class="list-group-item border-0 p-0 list-item"><a href="skills" class="text-decoration-none font-weight-bold link-item"><i class="fas fa-ellipsis-v icon"></i> Skills</a></li>
-                          <li class="list-group-item border-0 p-0 list-item"><a href="projects" class="text-decoration-none font-weight-bold link-item"><i class="fas fa-ellipsis-v icon"></i> Projects</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 d-none d-md-block col-md-4">
-                    <div class="row justify-content-center">
-                      <div class="col text-center quick-title">Services</div>
-                        <div class="col-12 p-0 border-left">
-                          <ul class="list-group quick-list">
-                            <li class="list-group-item border-0 p-0 list-item-s">IT Support</li>
-                            <li class="list-group-item border-0 p-0 list-item-s">Web Design</li>
-                            <li class="list-group-item border-0 p-0 list-item-s">Project Lead</li>
-                            <li class="list-group-item border-0 p-0 list-item-s">Team Management</li>
-                            <li class="list-group-item border-0 p-0 list-item-s">Custom Support</li>
-                          </ul>
+                      <div class="col-12 p-0">
+                        <div class="quick-links">
+                          <a href="home" class="quick-linsk-squer-wrap">
+                            <i class="fas fa-home section-logo"></i>
+                          </a>
+                          <a href="profile" class="quick-linsk-squer-wrap">
+                            <i class="fas fa-user section-logo"></i>
+                          </a>
+                          <a href="experience" class="quick-linsk-squer-wrap">
+                            <i class="fas fa-hands-helping section-logo"></i>
+                          </a>
+                          <a href="skills" class="quick-linsk-squer-wrap">
+                            <i class="fas fa-tools section-logo"></i>
+                          </a>
+                          <a href="projects" class="quick-linsk-squer-wrap">
+                            <i class="fas fa-tasks section-logo"></i>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -167,6 +345,11 @@
             </div>
             <div class="row justify-content-center social">
               <div class="col-10 text-center">
+                <div class="row justify-content-center footer-line">
+                  <div class="col-4 col-sm-3 footer-l"></div>
+                  <div class="col-3 col-sm-2 footer-g"></div>
+                  <div class="col-4 col-sm-3 footer-l"></div>
+                </div>
                 <div class="row justify-content-center">
                   <div class="col-4 col-sm-3 col-md-2 col-lg-1">
                     <div class="social-wrap">
@@ -193,7 +376,7 @@
             </div>
         </div> 
       </div> 
-    </div>   
+    </div>  
     <script src="source/app.js"></script>
     <script src="source/router.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"

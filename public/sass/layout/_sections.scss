@@ -1,7 +1,6 @@
 .section {
   padding-top: 8rem;
   @include response(sm) {padding-top: 10rem;}
-
   .section-squer-main-wrap{
     padding: 2rem 0 2rem 0;
     @include response(md) {padding: 2.5rem 0 2.5rem 0;}
@@ -44,76 +43,190 @@
     }
   }
   .mt-line-sections {margin-top: 1rem;}
+  .home-heding {
+    font-size: 4rem;
+    font-family: $heding-font;
+    font-weight: bold;
+    color: $g-color;
+    margin-top: 1rem;
+    @include response(sm) {
+      font-size: 6rem;
+      letter-spacing: 4px;
+    }
+    @include response(md) {
+      font-size: 8rem;
+      letter-spacing: 6px;
+    }
+    @include response(lg) {
+      font-size: 10rem;
+      letter-spacing: 10px;
+      margin-top: 2rem;
+    }
+  }
+  .h-1 {
+    font-family: $heding-font;
+    color: $light-grey;
+    font-size: 3.5rem;
+    @include response(sm) {font-size: 5.5rem;}
 
-.home-heding {
-  font-size: 4rem;
-  font-family: $heding-font;
-  font-weight: bold;
-  color: $g-color;
-  margin-top: 1rem;
-  @include response(sm) {
-    font-size: 6rem;
-    letter-spacing: 4px;
   }
-  @include response(md) {
-    font-size: 8rem;
-    letter-spacing: 6px;
+  .ts-1 {
+    font-size: 2.5rem;
+    color: $dark-grey;
+    font-weight: bold;
+    font-family: $base-font;
+    letter-spacing: 2px;
+    @include response(sm) {font-size: 3.5rem;}
+    @include response(md) {font-size: 5.5rem;}
   }
-  @include response(lg) {
-    font-size: 10rem;
-    letter-spacing: 10px;
+  .ts-2 {
+    font-family: $heding-font;
+    letter-spacing: 1px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: rgba(200,218,211, 0.3);
+    margin: -2rem 0 0 2rem;
+    @include response(sm) {
+      margin: -3rem 0 0 2rem;
+      font-size: 5.5rem;
+    }
+    @include response(md) {
+      margin: -3.5rem 0 0 2rem;
+      font-size: 7.5rem;
+    }
+
+  }
+  .it-guru {
+    font-size: 2rem;
+    color: $g-color;
+    font-weight: bold;
+    font-family: $heding-font;
+    @include response(sm) {font-size: 3rem;}
+  }
+  .intro-text, .footer-intro {
+    font-family: $base-font;
+    color: black;
+    font-size: 1.8rem;
+    @include response(sm) {font-size: 2.2rem;}
+    @include response(md) {font-size: 2.5rem;}
+  }
+
+  .diploma-h1 {
+    font-size: 2.5rem;
+    color: $dark-grey;
+    font-weight: bold;
+    font-family: $base-font;
+    margin-top:1.5rem;
+    @include response(sm) {
+      margin-top:2rem;
+      font-size: 3.5rem;}
+  }
+  .diplomas-mtt {
     margin-top: 2rem;
+    @include response(md) {margin-top:0;}
   }
-}
-.h-1 {
-  font-family: $heding-font;
-  color: $light-grey;
-  font-size: 3.5rem;
-  @include response(sm) {font-size: 5.5rem;}
-
-}
-.ts-1 {
-  font-size: 2.5rem;
-  color: $dark-grey;
-  font-weight: bold;
-  font-family: $base-font;
-  letter-spacing: 2px;
-  @include response(sm) {font-size: 3.5rem;}
-  @include response(md) {font-size: 5.5rem;}
-}
-
-.ts-2 {
-  font-family: $heding-font;
-  letter-spacing: 1px;
-  font-size: 3.5rem;
-  font-weight: bold;
-  color: rgba(200,218,211, 0.3);
-  margin: -2rem 0 0 2rem;
-  @include response(sm) {
-    margin: -3rem 0 0 2rem;
-    font-size: 5.5rem;
+  
+  .diplomas-wrap {
+    margin-top: 1.5rem;
+    .instution-link-heading {
+      display: block;
+      width: 100%;
+      padding: .5rem 0;
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 2rem 2rem;
+      text-indent: 3rem;
+      font-size: 1.8rem;
+      text-decoration: none;
+      transition: all .3s ease;
+      color:rgb(8, 95, 99);
+      @include response(sm) {font-size: 2.2rem;}
+      &:hover {color: rgba(0, 0, 0, 0.6);}
+    }
+    .code_fav {background-image: url(../images/code_fav.png);}
+    .ms_fav {background-image: url(../images/ms_fav.png);}
+    .diploma-link {
+      img {
+        width: 60%;
+        @include response(sm) {
+          width: 100%;
+          margin-top:1.5rem;
+        }
+      }
+    }
+    .diploma-description {
+      padding: 0;
+      a {
+        display:block;
+        margin-top: 2rem;
+        color: rgba(8, 95, 99, 0.8);
+        font-size: 2rem;
+        @include response(sm) {padding-left: 1.5rem;}
+      }
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        @include response(sm) {
+          font-size: 2rem;
+          padding-left: 1.5rem;
+        }
+      }
+      ul{
+        list-style: none;
+        @include response(sm) {padding-left: 1.5rem;}
+        li {
+          font-size: 1.3rem;
+          margin-bottom: .5rem;
+          @include response(sm) {font-size: 1.7rem;}
+          @include response(md) {font-size: 1.5rem;}
+          @include response(lg) {font-size: 1.8rem;}
+        }
+      }
+    } 
   }
-  @include response(md) {
-    margin: -3.5rem 0 0 2rem;
-    font-size: 7.5rem;
+  .cert-wraps {
+    margin-top:2rem; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    @include response(sm) {grid-template-columns: 1fr 1fr 1fr 1fr;}
+    @include response(lg) {grid-gap: 2rem;}
+  
+    .cert-link-wrap {
+      display: block;
+      text-align: center;
+      transition: all;
+      border: 1px solid rgba(8, 95, 99, 0.5);
+      span {
+        display: block;
+        color:rgba(8, 95, 99, 0.8);
+        font-weight:bolder;
+        padding: .5rem 0;
+        font-size: 1.3rem;
+      }
+      &:hover {text-decoration:none;}
+    }
+    .sliding-middle-out {
+      display: inline-block;
+      position: relative;
+      padding-bottom: 0;
+    }
+    .sliding-middle-out:after {
+      content: '';
+      display: block;
+      margin: auto;
+      height: 3.5px;
+      width: 0px;
+      background: transparent;
+      transition: width .5s ease, background-color .5s ease;
+    }
+    .sliding-middle-out:hover:after {
+      width: 100%;
+      background: rgb(8, 95, 99);
+    }
   }
 
-}
 
-.it-guru {
-  font-size: 2rem;
-  color: $g-color;
-  font-weight: bold;
-  font-family: $heding-font;
-  @include response(sm) {font-size: 3rem;}
-}
-.intro-text, .footer-intro {
-  font-family: $base-font;
-  color: black;
-  font-size: 1.8rem;
-  @include response(sm) {font-size: 2.2rem;}
-  @include response(md) {font-size: 2.5rem;}
-}
 
 .testiomonial {
   padding-top: 2rem;

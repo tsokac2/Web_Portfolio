@@ -28,7 +28,6 @@
       font-size: 2.5rem;
     }
   }
-
   .footer-line {
     margin-bottom: 1.5rem;
 
@@ -36,10 +35,8 @@
        padding-top:1rem;
      }
   }
-
   &-l {border-top: 1px solid $super-light-grey;}
   &-g {border-top: 1.3px solid  $g-color;}
-
   .details {
     padding-bottom: 3rem;
     .mt {
@@ -98,57 +95,64 @@
       }
     }
   } 
-
   .quick {
-    padding-top: 2.2rem;
+    padding-top: .5rem;
     &-title {
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: bold;
       color: $dark-grey;
       padding-bottom: 1rem;
+      @include response(sm) {font-size: 3rem;}
     }
     &-about {
       color: $dark-grey;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       text-align: center;
-      @include response(sm) {
-        font-size: 2rem;
-      }
+      @include response(sm) {font-size: 2.2rem;}
     }
     &-it {
       color: $g-color;
     }
-    &-list {
-      width: 50%;
-      margin-left: 25%;
-      @include response(md) {
-        width: 80%;
-        margin-left: 10%;
-      }
-      .list-item {
-        margin-bottom: 0.7rem;
-        .link-item {
-          font-size:2rem;
-          color: $dark-grey;
-          .icon {
-            margin-right: 1rem;
-            color: $g-color;
+    &-links {
+      display: flex;
+      padding: 2rem 0;
+      justify-content: center;
+      gap: 2.5rem;
+      @include response(sm) {gap: 3.5rem;}
+      .quick-linsk-squer-wrap {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3.5rem;
+        height: 3.5rem;
+        transform: rotate(45deg);
+        border: 2px solid rgba(2, 44, 67,.4);
+        transition: all;
+        &:hover{
+          i {
+            color: rgba(8, 95, 99, 0.5);
+            transition: .25s ease-in-out;
           }
-          &:hover {
-            color: rgba(8,95,99,.4);
-            transition: width .5s ease, color .5s ease;
-            }
+          text-decoration: none;
+        }
+        @include response(sm) {
+          width: 6rem;
+          height: 6rem;
+        }
+        .section-logo {
+          color: rgba(8, 95, 99, 0.8);
+          font-size: 2rem;
+          transform: rotate(-45deg);
+          @include response(sm) {
+            font-size: 3rem;
           }
-      }
-      .list-item-s {
-        font-family: $heding-font;
-        margin-bottom: 0.7rem;
-        font-size: 2rem;
-        color: $dark-grey;
+      
+      
+        }
       }
     }
   } 
-
   .social {
     margin-top: 2rem;
     @include response(md) {margin-top: 2rem;}

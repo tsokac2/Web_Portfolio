@@ -21,26 +21,17 @@ html {
     .navbar {
       border-bottom: none;
       padding-top: 1.5rem; } }
-  @media (min-width: 992px) {
-    .navbar .ml-tsr {
-      margin-left: 10rem; } }
   .navbar .logo-ts {
     margin-top: 1vh;
     font-weight: bold;
     font-size: 3rem;
     color: rgba(0, 0, 0, 0.7); }
-    @media (min-width: 576px) {
-      .navbar .logo-ts {
-        font-size: 4.5rem; } }
     .navbar .logo-ts .logo-s {
       font-family: 'Stoke', serif;
       font-weight: bold;
       font-style: italic;
       font-size: 2.5rem;
       margin-left: -5px; }
-      @media (min-width: 576px) {
-        .navbar .logo-ts .logo-s {
-          font-size: 3.5rem; } }
     .navbar .logo-ts:hover {
       color: rgba(0, 0, 0, 0.2);
       transition: width .5s ease, color .5s ease; }
@@ -55,9 +46,6 @@ html {
     @media (min-width: 576px) {
       .navbar .navbar-nav {
         background-color: white; } }
-  @media (min-width: 576px) {
-    .navbar .nav-item {
-      border-right: 1px dotted rgba(140, 140, 140, 0.5); } }
   @media (min-width: 768px) {
     .navbar .nav-item {
       padding: 0 1rem 0 1rem; } }
@@ -79,21 +67,6 @@ html {
     .navbar .nav-item .nav-link:hover {
       color: rgba(8, 95, 99, 0.4);
       transition: width .5s ease, color .5s ease; }
-  .navbar .nav-item .sliding-middle-out {
-    display: inline-block;
-    position: relative;
-    padding-bottom: 1.5px; }
-  .navbar .nav-item .sliding-middle-out:after {
-    content: '';
-    display: block;
-    margin: auto;
-    height: 1px;
-    width: 0px;
-    background: transparent;
-    transition: width .5s ease, background-color .5s ease; }
-  .navbar .nav-item .sliding-middle-out:hover:after {
-    width: 100%;
-    background: #000; }
   .navbar .ho-item, .navbar .ex-item, .navbar .pr-item {
     background-color: rgba(122, 196, 207, 0.1);
     border-right: 2px solid rgba(8, 95, 99, 0.4);
@@ -105,6 +78,60 @@ html {
         border-right: 1px dotted rgba(140, 140, 140, 0.5); } }
   @media (min-width: 576px) {
     .navbar .pr-item {
+      border-right: none; } }
+
+.desktop-nav-wrap {
+  background-color: #ecfbfc;
+  padding: 2rem 0; }
+  .desktop-nav-wrap .logo-ts {
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.7); }
+    @media (min-width: 768px) {
+      .desktop-nav-wrap .logo-ts {
+        font-size: 4rem; } }
+    .desktop-nav-wrap .logo-ts .logo-s {
+      font-family: 'Stoke', serif;
+      font-weight: bold;
+      font-style: italic;
+      font-size: 2.5rem;
+      margin-left: -5px; }
+      @media (min-width: 768px) {
+        .desktop-nav-wrap .logo-ts .logo-s {
+          font-size: 3rem; } }
+    .desktop-nav-wrap .logo-ts:hover {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.5);
+      transition: width .5s ease, color .5s ease; }
+  .desktop-nav-wrap .nav-link {
+    padding: 0 1rem;
+    border-right: 1px dotted rgba(140, 140, 140, 0.5);
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #085f63; }
+    @media (min-width: 992px) {
+      .desktop-nav-wrap .nav-link {
+        padding: 0 2rem;
+        font-size: 2.8rem; } }
+  .desktop-nav-wrap .sliding-middle-out {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 1.5px; }
+  .desktop-nav-wrap .sliding-middle-out:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease; }
+  .desktop-nav-wrap .sliding-middle-out:hover:after {
+    width: 100%;
+    background: #000; }
+  @media (min-width: 576px) {
+    .desktop-nav-wrap .last-item {
       border-right: none; } }
 
 .section {
@@ -226,6 +253,123 @@ html {
     @media (min-width: 768px) {
       .section .intro-text, .section .footer-intro {
         font-size: 2.5rem; } }
+  .section .diploma-h1 {
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 1.5rem; }
+    @media (min-width: 576px) {
+      .section .diploma-h1 {
+        margin-top: 2rem;
+        font-size: 3.5rem; } }
+  .section .diplomas-mtt {
+    margin-top: 2rem; }
+    @media (min-width: 768px) {
+      .section .diplomas-mtt {
+        margin-top: 0; } }
+  .section .diplomas-wrap {
+    margin-top: 1.5rem; }
+    .section .diplomas-wrap .instution-link-heading {
+      display: block;
+      width: 100%;
+      padding: .5rem 0;
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 2rem 2rem;
+      text-indent: 3rem;
+      font-size: 1.8rem;
+      text-decoration: none;
+      transition: all .3s ease;
+      color: #085f63; }
+      @media (min-width: 576px) {
+        .section .diplomas-wrap .instution-link-heading {
+          font-size: 2.2rem; } }
+      .section .diplomas-wrap .instution-link-heading:hover {
+        color: rgba(0, 0, 0, 0.6); }
+    .section .diplomas-wrap .code_fav {
+      background-image: url(../images/code_fav.png); }
+    .section .diplomas-wrap .ms_fav {
+      background-image: url(../images/ms_fav.png); }
+    .section .diplomas-wrap .diploma-link img {
+      width: 60%; }
+      @media (min-width: 576px) {
+        .section .diplomas-wrap .diploma-link img {
+          width: 100%;
+          margin-top: 1.5rem; } }
+    .section .diplomas-wrap .diploma-description {
+      padding: 0; }
+      .section .diplomas-wrap .diploma-description a {
+        display: block;
+        margin-top: 2rem;
+        color: rgba(8, 95, 99, 0.8);
+        font-size: 2rem; }
+        @media (min-width: 576px) {
+          .section .diplomas-wrap .diploma-description a {
+            padding-left: 1.5rem; } }
+      .section .diplomas-wrap .diploma-description h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem; }
+        @media (min-width: 576px) {
+          .section .diplomas-wrap .diploma-description h3 {
+            font-size: 2rem;
+            padding-left: 1.5rem; } }
+      .section .diplomas-wrap .diploma-description ul {
+        list-style: none; }
+        @media (min-width: 576px) {
+          .section .diplomas-wrap .diploma-description ul {
+            padding-left: 1.5rem; } }
+        .section .diplomas-wrap .diploma-description ul li {
+          font-size: 1.3rem;
+          margin-bottom: .5rem; }
+          @media (min-width: 576px) {
+            .section .diplomas-wrap .diploma-description ul li {
+              font-size: 1.7rem; } }
+          @media (min-width: 768px) {
+            .section .diplomas-wrap .diploma-description ul li {
+              font-size: 1.5rem; } }
+          @media (min-width: 992px) {
+            .section .diplomas-wrap .diploma-description ul li {
+              font-size: 1.8rem; } }
+  .section .cert-wraps {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem; }
+    @media (min-width: 576px) {
+      .section .cert-wraps {
+        grid-template-columns: 1fr 1fr 1fr 1fr; } }
+    @media (min-width: 992px) {
+      .section .cert-wraps {
+        grid-gap: 2rem; } }
+    .section .cert-wraps .cert-link-wrap {
+      display: block;
+      text-align: center;
+      transition: all;
+      border: 1px solid rgba(8, 95, 99, 0.5); }
+      .section .cert-wraps .cert-link-wrap span {
+        display: block;
+        color: rgba(8, 95, 99, 0.8);
+        font-weight: bolder;
+        padding: .5rem 0;
+        font-size: 1.3rem; }
+      .section .cert-wraps .cert-link-wrap:hover {
+        text-decoration: none; }
+    .section .cert-wraps .sliding-middle-out {
+      display: inline-block;
+      position: relative;
+      padding-bottom: 0; }
+    .section .cert-wraps .sliding-middle-out:after {
+      content: '';
+      display: block;
+      margin: auto;
+      height: 3.5px;
+      width: 0px;
+      background: transparent;
+      transition: width .5s ease, background-color .5s ease; }
+    .section .cert-wraps .sliding-middle-out:hover:after {
+      width: 100%;
+      background: #085f63; }
   .section .testiomonial {
     padding-top: 2rem; }
     .section .testiomonial-height {
@@ -785,44 +929,58 @@ html {
         font-size: 2rem; } }
 
 .footer .quick {
-  padding-top: 2.2rem; }
+  padding-top: .5rem; }
   .footer .quick-title {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.7);
     padding-bottom: 1rem; }
+    @media (min-width: 576px) {
+      .footer .quick-title {
+        font-size: 3rem; } }
   .footer .quick-about {
     color: rgba(0, 0, 0, 0.7);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: center; }
     @media (min-width: 576px) {
       .footer .quick-about {
-        font-size: 2rem; } }
+        font-size: 2.2rem; } }
   .footer .quick-it {
     color: rgba(8, 95, 99, 0.8); }
-  .footer .quick-list {
-    width: 50%;
-    margin-left: 25%; }
-    @media (min-width: 768px) {
-      .footer .quick-list {
-        width: 80%;
-        margin-left: 10%; } }
-    .footer .quick-list .list-item {
-      margin-bottom: 0.7rem; }
-      .footer .quick-list .list-item .link-item {
+  .footer .quick-links {
+    display: flex;
+    padding: 2rem 0;
+    justify-content: center;
+    gap: 2.5rem; }
+    @media (min-width: 576px) {
+      .footer .quick-links {
+        gap: 3.5rem; } }
+    .footer .quick-links .quick-linsk-squer-wrap {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3.5rem;
+      height: 3.5rem;
+      transform: rotate(45deg);
+      border: 2px solid rgba(2, 44, 67, 0.4);
+      transition: all; }
+      .footer .quick-links .quick-linsk-squer-wrap:hover {
+        text-decoration: none; }
+        .footer .quick-links .quick-linsk-squer-wrap:hover i {
+          color: rgba(8, 95, 99, 0.5);
+          transition: .25s ease-in-out; }
+      @media (min-width: 576px) {
+        .footer .quick-links .quick-linsk-squer-wrap {
+          width: 6rem;
+          height: 6rem; } }
+      .footer .quick-links .quick-linsk-squer-wrap .section-logo {
+        color: rgba(8, 95, 99, 0.8);
         font-size: 2rem;
-        color: rgba(0, 0, 0, 0.7); }
-        .footer .quick-list .list-item .link-item .icon {
-          margin-right: 1rem;
-          color: rgba(8, 95, 99, 0.8); }
-        .footer .quick-list .list-item .link-item:hover {
-          color: rgba(8, 95, 99, 0.4);
-          transition: width .5s ease, color .5s ease; }
-    .footer .quick-list .list-item-s {
-      font-family: "Lato", sans-serif;
-      margin-bottom: 0.7rem;
-      font-size: 2rem;
-      color: rgba(0, 0, 0, 0.7); }
+        transform: rotate(-45deg); }
+        @media (min-width: 576px) {
+          .footer .quick-links .quick-linsk-squer-wrap .section-logo {
+            font-size: 3rem; } }
 
 .footer .social {
   margin-top: 2rem; }
