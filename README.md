@@ -1,6 +1,10 @@
 # **[Tomislav Sokac](http://www.tomislavsokac.com/home)**
 
+<<<<<<< HEAD
 ![Website Main Mockup](https://github.com/tsokac2/Web_Portfolio/blob/main/public/images/m_wireframe.jpg)
+=======
+![Website Main Mockup](https://github.com/tsokac2/newirishlife/blob/main/static/wireframes/W4_Main.jpg)
+>>>>>>> 200e06af5f48bd21c060b7baab47e9441a30d8f2
 
 
 ## Contents
